@@ -86,6 +86,7 @@ if (guestLists.includes (guestCheck)){
 }else{
     alert("you are not welcome")
 }*/
+/*
 function whosPaying(names) {
 
         var namesLength = names.length;
@@ -93,4 +94,52 @@ function whosPaying(names) {
         var namesChoose =names[randomNo];
         return(namesChoose + " is going to buy lunch today!");
 
+    }*/
+
+/*
+i = 1
+while (i<=50) {
+    if (i%5===0 && i%3===0){
+        document.write("FizzBuzz <br>")
+    }else if(i%3===0){
+        document.write("Fizz<br>")
+    }else if(i%5===0){
+        document.write("Buzz<br>")
+    }else{
+        document.write(i,"<br>")
     }
+    i=i+1
+}
+*/
+
+/*
+i=100
+function beer() {
+    while (i>1) {
+        document.write(i," bottles of beer on the wall,",i," bottles of beer. Take 1 down, pass it around ",i-1," bottles of beer on the wall.<br>")
+        i--
+    }
+}
+beer()
+
+*/
+
+//for loop
+
+function fibonacciGenerator(n) {
+
+    var output =[]
+    if (n===1){
+        output = [0]
+    }else if (n===2){
+        output = [0,1]
+    }else{
+        output = [0,1]
+        for( var i =2; i<n; i++){
+            output.push(output[output.length-2]+output[output.length-1])
+
+        }
+    }
+    return output;
+}
+document.write(fibonacciGenerator(4))
